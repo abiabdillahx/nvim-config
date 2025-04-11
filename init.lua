@@ -35,3 +35,22 @@ require "nvchad.autocmds"
 vim.schedule(function()
   require "mappings"
 end)
+
+-- call vim-plug
+vim.cmd [[
+  call plug#begin('~/.local/share/nvim/plugged')
+
+  
+  " List plugin di sini
+  Plug 'tpope/vim-surround'
+  Plug 'preservim/nerdtree'
+  Plug 'shaunsingh/nord.nvim'
+
+  call plug#end()
+]]
+
+-- [[
+-- vim.cmd [[
+--  colorscheme nord
+-- ]]
+-- ]]
